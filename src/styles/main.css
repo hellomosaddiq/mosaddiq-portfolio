@@ -128,22 +128,15 @@ a[data-link] {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Better underline hover effect for regular links */
+/* Simple color transition for internal links */
 a[data-link]:not(.back-nav):not(.theme-toggle) {
-  background-image: linear-gradient(
-    to right,
-    var(--color-accent-primary),
-    var(--color-accent-primary)
-  );
-  background-size: 0% 1px;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  transition: background-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a[data-link]:not(.back-nav):not(.theme-toggle):hover {
-  background-size: 100% 1px;
   color: var(--color-accent-primary);
+  text-decoration: underline;
 }
 
 /* Enhanced Back Navigation */
@@ -172,45 +165,25 @@ a[data-link]:not(.back-nav):not(.theme-toggle):hover {
   margin-right: 0.75rem;
 }
 
-/* Enhanced underline for project links and external links */
+/* Simple hover effect for project links and external links */
 .project-link {
-  position: relative;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background-image: linear-gradient(
-    to right,
-    var(--color-accent-primary),
-    var(--color-accent-hover)
-  );
-  background-size: 0% 2px;
-  background-position: left bottom;
-  background-repeat: no-repeat;
 }
 
 .project-link:hover {
-  background-size: 100% 2px;
   color: var(--color-accent-primary) !important;
-  text-decoration: none;
+  text-decoration: underline;
   transform: translateY(-1px);
 }
 
-/* Enhanced External Links and General Link Styles */
+/* Simple External Links and General Link Styles */
 a:not([data-link]):not(.back-nav):not(.theme-toggle):not(.project-link) {
-  position: relative;
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  background-image: linear-gradient(
-    to right,
-    var(--color-accent-primary),
-    var(--color-accent-primary)
-  );
-  background-size: 0% 1px;
-  background-position: left bottom;
-  background-repeat: no-repeat;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:not([data-link]):not(.back-nav):not(.theme-toggle):not(.project-link):hover {
-  background-size: 100% 1px;
   color: var(--color-accent-primary) !important;
-  text-decoration: none;
+  text-decoration: underline;
 }
