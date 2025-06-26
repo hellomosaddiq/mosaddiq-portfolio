@@ -120,3 +120,97 @@ body {
 [data-theme="light"] {
   --color-bg-subtle: #f1f5f9;
 }
+
+/* Enhanced Link Hover Effects */
+a[data-link] {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Better underline hover effect for regular links */
+a[data-link]:not(.back-nav):not(.theme-toggle) {
+  background-image: linear-gradient(
+    to right,
+    var(--color-accent-primary),
+    var(--color-accent-primary)
+  );
+  background-size: 0% 1px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a[data-link]:not(.back-nav):not(.theme-toggle):hover {
+  background-size: 100% 1px;
+  color: var(--color-accent-primary);
+}
+
+/* Enhanced Back Navigation */
+.back-nav {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.back-nav:hover {
+  color: var(--color-text-primary);
+  transform: translateX(-4px);
+}
+
+.back-nav::before {
+  content: '←';
+  margin-right: 0.5rem;
+  transition: margin-right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.back-nav:hover::before {
+  margin-right: 0.75rem;
+}
+
+/* Enhanced underline for project links and external links */
+.project-link {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: linear-gradient(
+    to right,
+    var(--color-accent-primary),
+    var(--color-accent-hover)
+  );
+  background-size: 0% 2px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.project-link:hover {
+  background-size: 100% 2px;
+  color: var(--color-accent-primary) !important;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+/* Enhanced External Links and General Link Styles */
+a:not([data-link]):not(.back-nav):not(.theme-toggle):not(.project-link) {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: linear-gradient(
+    to right,
+    var(--color-accent-primary),
+    var(--color-accent-primary)
+  );
+  background-size: 0% 1px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+a:not([data-link]):not(.back-nav):not(.theme-toggle):not(.project-link):hover {
+  background-size: 100% 1px;
+  color: var(--color-accent-primary) !important;
+  text-decoration: none;
+}

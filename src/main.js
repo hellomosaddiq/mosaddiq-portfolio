@@ -33,7 +33,7 @@ const routes = {
       div.innerHTML = `
         <h1 class="text-4xl font-bold mb-4" style="color: var(--color-text-primary);">404</h1>
         <p style="color: var(--color-text-muted);">Page not found</p>
-        <a href="/" data-link class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">Go home</a>
+        <a href="/" data-link class="text-blue-400">Go home</a>
       `;
       return div;
     }

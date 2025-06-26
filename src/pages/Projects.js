@@ -12,9 +12,8 @@ export function Projects() {
   const backLink = document.createElement('a');
   backLink.href = '/';
   backLink.setAttribute('data-link', '');
-  backLink.className = 'inline-flex items-center text-sm transition-colors hover:text-blue-400';
-  backLink.style.color = 'var(--color-text-muted)';
-  backLink.innerHTML = '← mosaddiq';
+  backLink.className = 'back-nav';
+  backLink.innerHTML = 'mosaddiq';
 
   nav.appendChild(backLink);
 
@@ -78,7 +77,7 @@ export function Projects() {
     if (project.url) {
       li.innerHTML = `
         <span class="absolute left-0 top-0 font-bold" style="color: var(--color-text-faint);">•</span>
-        <a href="${project.url}" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">${project.title}</a>
+        <a href="${project.url}" class="project-link text-blue-400">${project.title}</a>
         <span style="color: var(--color-text-secondary);"> - ${project.description}</span>
       `;
     } else {
@@ -97,7 +96,7 @@ export function Projects() {
   // More projects link
   const moreSection = document.createElement('div');
   moreSection.className = 'mt-6';
-  moreSection.innerHTML = `<p style="color: var(--color-text-subtle);">More projects can be found <a href="https://github.com/hellomosaddiq" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">here</a>.</p>`;
+  moreSection.innerHTML = `<p style="color: var(--color-text-subtle);">More projects can be found <a href="https://github.com/hellomosaddiq" class="project-link text-blue-400">here</a>.</p>`;
 
   container.appendChild(header);
   container.appendChild(projectsSection);

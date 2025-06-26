@@ -12,9 +12,8 @@ export function Now() {
   const backLink = document.createElement('a');
   backLink.href = '/';
   backLink.setAttribute('data-link', '');
-  backLink.className = 'inline-flex items-center text-sm transition-colors hover:text-blue-400';
-  backLink.style.color = 'var(--color-text-muted)';
-  backLink.innerHTML = '← mosaddiq';
+  backLink.className = 'back-nav';
+  backLink.innerHTML = 'mosaddiq';
 
   nav.appendChild(backLink);
 
@@ -35,7 +34,7 @@ export function Now() {
   intro.className = 'text-sm leading-relaxed italic';
   intro.style.color = 'var(--color-text-subtle)';
   intro.innerHTML = `
-    (This is a <a href="https://nownownow.com/about" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">now page</a>,
+    (This is a <a href="https://nownownow.com/about" class="project-link text-blue-400">now page</a>,
     and if you have your own site, you should make one, too.)
   `;
 

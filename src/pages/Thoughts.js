@@ -12,9 +12,8 @@ export function Thoughts() {
   const backLink = document.createElement('a');
   backLink.href = '/';
   backLink.setAttribute('data-link', '');
-  backLink.className = 'inline-flex items-center text-sm transition-colors hover:text-blue-400';
-  backLink.style.color = 'var(--color-text-muted)';
-  backLink.innerHTML = '← mosaddiq';
+  backLink.className = 'back-nav';
+  backLink.innerHTML = 'mosaddiq';
 
   nav.appendChild(backLink);
 
@@ -54,7 +53,7 @@ export function Thoughts() {
         li.className = 'relative pl-6';
         li.innerHTML = `
           <span class="absolute left-0 top-0 font-bold" style="color: var(--color-text-faint);">•</span>
-          <a href="/thoughts/${thought.id}" data-link class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">${thought.title}</a>
+          <a href="/thoughts/${thought.id}" data-link class="text-blue-400">${thought.title}</a>
           <span style="color: var(--color-text-secondary);"> - ${thought.description}</span>
         `;
         thoughtsList.appendChild(li);

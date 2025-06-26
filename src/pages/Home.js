@@ -22,7 +22,7 @@ export function Home() {
     Student developer learning to build things for the web.
     Passionate about clean code and user experience. Currently exploring
     modern web technologies and best practices.
-    More <a href="/about" data-link class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">about me</a>.
+    More <a href="/about" data-link class="text-blue-400">about me</a>.
   `;
 
   header.appendChild(nameContainer);
@@ -66,7 +66,7 @@ export function Home() {
     li.className = 'relative pl-6';
     li.innerHTML = `
       <span class="absolute left-0 top-0 font-bold" style="color: var(--color-text-faint);">•</span>
-      <a href="${project.url}" class="text-blue-400 hover:text-blue-300 hover:underline font-medium transition-colors">${project.title}</a>
+      <a href="${project.url}" class="project-link text-blue-400 font-medium">${project.title}</a>
       <span style="color: var(--color-text-secondary);"> - ${project.description}</span>
     `;
     projectsList.appendChild(li);
@@ -75,7 +75,7 @@ export function Home() {
   const moreProjects = document.createElement('p');
   moreProjects.className = 'mt-6';
   moreProjects.style.color = 'var(--color-text-subtle)';
-  moreProjects.innerHTML = `More projects can be found <a href="/projects" data-link class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">here</a>.`;
+  moreProjects.innerHTML = `More projects can be found <a href="/projects" data-link class="text-blue-400">here</a>.`;
 
   projectsSection.appendChild(projectsTitle);
   projectsSection.appendChild(projectsList);
@@ -106,7 +106,7 @@ export function Home() {
         li.className = 'relative pl-6';
         li.innerHTML = `
           <span class="absolute left-0 top-0 font-bold" style="color: var(--color-text-faint);">•</span>
-          <a href="/thoughts/${thought.id}" data-link class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">${thought.title}</a>
+          <a href="/thoughts/${thought.id}" data-link class="text-blue-400">${thought.title}</a>
           <span style="color: var(--color-text-secondary);"> - ${thought.description}</span>
         `;
         thoughtsList.appendChild(li);
@@ -130,7 +130,7 @@ export function Home() {
   // Add "View all thoughts" link
   const viewAllLink = document.createElement('div');
   viewAllLink.className = 'mt-6';
-  viewAllLink.innerHTML = `<p style="color: var(--color-text-subtle);">More thoughts can be found <a href="/thoughts" data-link class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">here</a>.</p>`;
+  viewAllLink.innerHTML = `<p style="color: var(--color-text-subtle);">More thoughts can be found <a href="/thoughts" data-link class="text-blue-400">here</a>.</p>`;
 
   thoughtsSection.appendChild(thoughtsTitle);
   thoughtsSection.appendChild(thoughtsList);

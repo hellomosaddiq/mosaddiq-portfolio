@@ -14,7 +14,7 @@ export function parseMarkdown(markdown) {
   html = html.replace(/^\*(.*?)\*$/gim, '<p class="text-sm mb-8 italic" style="color: var(--color-text-subtle);">$1</p>');
 
   // Links
-  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">$1</a>');
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="project-link text-blue-400">$1</a>');
 
   // Paragraphs - split by double newlines and wrap in p tags
   const paragraphs = html.split('\n\n');

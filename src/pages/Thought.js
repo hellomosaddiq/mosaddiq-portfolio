@@ -14,9 +14,8 @@ export function Thought(thoughtId) {
   const backLink = document.createElement('a');
   backLink.href = '/';
   backLink.setAttribute('data-link', '');
-  backLink.className = 'inline-flex items-center text-sm transition-colors hover:text-blue-400';
-  backLink.style.color = 'var(--color-text-muted)';
-  backLink.innerHTML = '← mosaddiq';
+  backLink.className = 'back-nav';
+  backLink.innerHTML = 'mosaddiq';
 
   nav.appendChild(backLink);
   header.appendChild(nav);
@@ -61,7 +60,7 @@ export function Thought(thoughtId) {
         <p class="leading-relaxed mb-6" style="color: var(--color-text-secondary);">
           Sorry, there was an error loading this thought. Please try again later.
         </p>
-        <a href="/" data-link class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">← Back to home</a>
+        <a href="/" data-link class="text-blue-400">← Back to home</a>
       `;
     }
   }

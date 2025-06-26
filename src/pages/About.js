@@ -12,9 +12,8 @@ export function About() {
   const backLink = document.createElement('a');
   backLink.href = '/';
   backLink.setAttribute('data-link', '');
-  backLink.className = 'inline-flex items-center text-sm transition-colors hover:text-blue-400';
-  backLink.style.color = 'var(--color-text-muted)';
-  backLink.innerHTML = '← mosaddiq';
+  backLink.className = 'back-nav';
+  backLink.innerHTML = 'mosaddiq';
 
   nav.appendChild(backLink);
 
@@ -39,7 +38,7 @@ export function About() {
   intro.style.color = 'var(--color-text-secondary)';
   intro.innerHTML = `
     I'm Mosaddiq, a student passionate about creating digital experiences and solving problems through code.
-    I spend my days writing <a href="#" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">JavaScript</a>,
+    I spend my days writing <a href="#" class="project-link text-blue-400">JavaScript</a>,
     experimenting with CSS, and building meaningful projects.
   `;
 
@@ -62,7 +61,7 @@ export function About() {
   currentStatus.className = 'leading-relaxed';
   currentStatus.style.color = 'var(--color-text-secondary)';
   currentStatus.innerHTML = `
-    Here's what I'm doing <a href="/now" data-link class="text-blue-400 hover:text-blue-300 hover:underline transition-colors">now</a>.
+    Here's what I'm doing <a href="/now" data-link class="text-blue-400">now</a>.
   `;
 
   aboutSection.appendChild(intro);
@@ -116,7 +115,7 @@ export function About() {
 
     const link = document.createElement('a');
     link.href = contact.href;
-    link.className = 'text-blue-400 hover:text-blue-300 hover:underline transition-colors';
+    link.className = 'project-link text-blue-400';
     link.textContent = contact.label;
 
     if (contact.value) {
