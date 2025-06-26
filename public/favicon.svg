@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- White background circle -->
+  <circle cx="16" cy="16" r="15" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+
+  <!-- Asterisk (*) - refined, balanced design -->
+  <!-- Vertical line (slightly shorter for better proportions) -->
+  <line x1="16" y1="9" x2="16" y2="23" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Horizontal line (slightly shorter) -->
+  <line x1="9" y1="16" x2="23" y2="16" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Diagonal line (top-left to bottom-right, better proportions) -->
+  <line x1="11.2" y1="11.2" x2="20.8" y2="20.8" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Diagonal line (top-right to bottom-left) -->
+  <line x1="20.8" y1="11.2" x2="11.2" y2="20.8" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Center dot for better balance -->
+  <circle cx="16" cy="16" r="1.2" fill="#1a1a1a"/>
+</svg>

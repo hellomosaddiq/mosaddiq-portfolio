@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mosaddiq - Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Hazrat Mosaddique Ali - 19-year-old developer from Dhubri, Assam. JEE aspirant, full-stack developer, and minimalist designer building meaningful projects.">
+    <meta name="keywords"
+        content="Mosaddiq, Hazrat Mosaddique Ali, developer, portfolio, JEE, IIT Delhi, web development, minimalist design, Dhubri Assam">
+    <meta name="author" content="Hazrat Mosaddique Ali">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mosaddiq - Portfolio">
+    <meta property="og:description"
+        content="19-year-old developer from Dhubri, Assam. JEE aspirant building meaningful projects with clean, minimalist design.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mosaddiq.dev">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mosaddiq - Portfolio">
+    <meta name="twitter:description"
+        content="19-year-old developer from Dhubri, Assam. JEE aspirant building meaningful projects with clean, minimalist design.">
+    <script>
+        // Prevent theme flicker by setting theme immediately
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            document.documentElement.style.backgroundColor = savedTheme === 'dark' ? '#1a1a1a' : '#ffffff';
+            document.documentElement.style.color = savedTheme === 'dark' ? '#e0e0e0' : '#2d3748';
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

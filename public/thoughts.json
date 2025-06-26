@@ -1,0 +1,124 @@
+{
+  "thoughts": [
+    {
+      "id": "second-attempt-hits-different",
+      "title": "Second attempt hits different",
+      "description": "The pressure, the hope, the fear all mixed together",
+      "date": "2025-06-20",
+      "featured": true,
+      "tags": ["jee", "personal", "struggle"]
+    },
+    {
+      "id": "study-better-after-2am",
+      "title": "Why I study better after 2 AM",
+      "description": "The world is quiet, and so is my overthinking mind",
+      "date": "2025-06-15",
+      "featured": true,
+      "tags": ["study", "night", "focus"]
+    },
+    {
+      "id": "math-used-to-be-favorite",
+      "title": "Math used to be my favorite, now it's my biggest enemy",
+      "description": "Class 11 changed everything, still trying to get back that love",
+      "date": "2025-06-10",
+      "featured": false,
+      "tags": ["math", "struggle", "jee"]
+    },
+    {
+      "id": "jee-routine-life",
+      "title": "7-8 hours of classes, then evening study, then night grind",
+      "description": "The JEE routine that's become my life",
+      "date": "2025-05-25",
+      "featured": true,
+      "tags": ["routine", "jee", "discipline"]
+    },
+    {
+      "id": "problem-solving-over-everything",
+      "title": "Problem-solving > everything else in coding",
+      "description": "The moment when logic clicks is pure magic",
+      "date": "2025-05-15",
+      "featured": false,
+      "tags": ["coding", "problem-solving", "passion"]
+    },
+    {
+      "id": "introvert-energy-creating",
+      "title": "I don't like talking to people, but I love creating things",
+      "description": "Introvert energy channeled into art and code",
+      "date": "2025-05-05",
+      "featured": false,
+      "tags": ["introvert", "creativity", "personality"]
+    },
+    {
+      "id": "building-from-scratch-world",
+      "title": "Building from scratch feels like creating your own world",
+      "description": "Every project is an escape from reality",
+      "date": "2025-04-25",
+      "featured": true,
+      "tags": ["coding", "creativity", "escapism"]
+    },
+    {
+      "id": "seedhe-maut-wisdom",
+      "title": "Pehle khud aage badho, uske baad sabko aage badhao",
+      "description": "Seedhe Maut wisdom that keeps me going",
+      "date": "2025-04-15",
+      "featured": false,
+      "tags": ["motivation", "philosophy", "growth"]
+    },
+    {
+      "id": "small-city-big-dreams",
+      "title": "Small city dreams, big city goals",
+      "description": "From Dhubri to IIT Delhi - the journey continues",
+      "date": "2025-04-05",
+      "featured": false,
+      "tags": ["dreams", "goals", "journey"]
+    },
+    {
+      "id": "painting-forget-everything",
+      "title": "When I paint, I forget everything - literally everything",
+      "description": "The only time my mind goes completely quiet",
+      "date": "2025-03-20",
+      "featured": true,
+      "tags": ["painting", "escapism", "peace"]
+    },
+    {
+      "id": "music-while-coding",
+      "title": "Music while coding: from emo rap to desi hip-hop",
+      "description": "The soundtrack to my problem-solving sessions",
+      "date": "2025-03-05",
+      "featured": false,
+      "tags": ["music", "coding", "focus"]
+    },
+    {
+      "id": "minimalistic-design-love",
+      "title": "Why I love minimalistic design like Linear and Claude",
+      "description": "Clean, elegant, no noise - just like I prefer life",
+      "date": "2025-02-15",
+      "featured": false,
+      "tags": ["design", "minimalism", "preference"]
+    },
+    {
+      "id": "three-ways-escape-reality",
+      "title": "Painting since 8, coding since 17, music since forever",
+      "description": "My three ways to escape reality",
+      "date": "2025-02-01",
+      "featured": false,
+      "tags": ["escapism", "hobbies", "identity"]
+    },
+    {
+      "id": "temporary-beautiful-moments",
+      "title": "Appreciating temporary beautiful moments",
+      "description": "Some things don't last, but that makes them more precious",
+      "date": "2024-12-26",
+      "featured": false,
+      "tags": ["philosophy", "appreciation", "moments"]
+    },
+    {
+      "id": "coding-mobile-textbook",
+      "title": "Started coding on mobile with just a textbook",
+      "description": "Sometimes limitations force the best learning",
+      "date": "2024-08-05",
+      "featured": false,
+      "tags": ["coding", "journey", "limitations"]
+    }
+  ]
+}
